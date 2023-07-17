@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GenImg</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Text to Image Generator</h1>
+    
+    <form action="/generate_image" method="post">
+      <!-- Your search bar and form elements -->
+  
+      <input type="text" name="prompt" placeholder="Imagine...." class="search-input">
+      <button type="submit" class = "search-button">Generate Image</button>
+  </form>
+  
+  {% if image_url %}
+  <div class="img-container">
+    <img src="{{ image_url }}" alt="Generated Image">
+  </div>
+  {% endif %}
+  
+  </div>
+</body>
+</html>

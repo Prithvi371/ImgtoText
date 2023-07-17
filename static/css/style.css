@@ -1,0 +1,63 @@
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family:'Exo 2', Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 18px;
+    width: 300px;
+    border: none;
+    border-radius: 20px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #00ff00;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #00cc00;
+}
+
+.image-container {
+    margin-top: 20px; 
+  }
+  
+  input[name="prompt"] {
+    margin-bottom: 10px;
+  }
+  
+  
