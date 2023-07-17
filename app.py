@@ -23,7 +23,7 @@ def generate_image():
     url = "https://stablediffusionapi.com/api/v3/text2img"
 
     payload = json.dumps({
-    "key": "3MwsWHt1ydgbTawxxjNQHb9SXrMatPkC5JENtv4tzfnJIFKPVM4FvVwVjvPC",
+    "key": "YOUR_API_KEY",
     "prompt": prompt,
     "negative_prompt": None,
     "width": "512",
